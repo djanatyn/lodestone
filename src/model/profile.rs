@@ -77,7 +77,7 @@ pub struct Profile {
     /// A list of attributes and their values.
     pub attributes: Attributes,
     /// A list of classes and their corresponding levels.
-    classes: Classes,
+    pub classes: Classes,
 }
 
 impl Profile {
