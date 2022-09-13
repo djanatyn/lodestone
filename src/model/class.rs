@@ -33,6 +33,7 @@ pub enum ClassType {
     Conjurer,
     Scholar,
     Astrologian,
+    Sage,
     //  Damage
     Monk,
     Pugilist,
@@ -51,6 +52,7 @@ pub enum ClassType {
     Arcanist,
     RedMage,
     BlueMage,
+    Reaper,
     //  Crafting
     Carpenter,
     Blacksmith,
@@ -103,6 +105,8 @@ impl FromStr for ClassType {
             "SUMMONER"      | "SMN" => Ok(ClassType::Summoner),
             "ARCANIST"      | "ACN" => Ok(ClassType::Arcanist),
             "RED MAGE"      | "RDM" => Ok(ClassType::RedMage),
+            "REAPER"        | "RPR" => Ok(ClassType::Reaper),
+            "SAGE"          | "SGE" => Ok(ClassType::Sage),
             "BLUE MAGE" | "BLUE MAGE (LIMITED JOB)" | "BLU" => Ok(ClassType::BlueMage),
             "CARPENTER"     | "CRP" => Ok(ClassType::Carpenter),
             "BLACKSMITH"    | "BSM" => Ok(ClassType::Blacksmith),
