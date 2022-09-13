@@ -126,7 +126,7 @@ impl FromStr for ClassType {
 
 /// Holds information about a profile's level/XP in a particular class.
 #[derive(Clone, Debug, Default, Eq, PartialEq)]
-pub struct Classes(HashMap<ClassType, Option<ClassInfo>>);
+pub struct Classes(pub HashMap<ClassType, Option<ClassInfo>>);
 
 impl Classes {
     pub fn new() -> Self {
